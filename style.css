@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 500px;
+    height: 700px;
+    border: 2px solid black;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 10px;
+}
+
+.keypads {
+    display: flex;
+    width: 400px;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.numKeys {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 370px;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+
+.operatorKeys {
+    display: flex;
+    flex-direction: column;
+    min-width: 130px;
+    align-items: center;
+    gap: 32px;
+}
+
+button {
+    width: 100px;
+    height: 70px;
+    border-radius: 80px;
+    font-size: large;
+    font-weight: 900;
+}
+
+.display {
+    border-bottom: 1px dashed black;
+    border-top: 1px dashed black;
+    margin: 5px 5px 30px 5px;
+    height: 170px;
+    border-radius: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.keypads,.operatorKeys {
+    background-color: lightgray;
+}
+
+.clear,.delete {
+    width: 150px;
+    height: 70px;
+}
